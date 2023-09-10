@@ -16,10 +16,10 @@ import FaceUi from "./FaceUi";
 interface Props {
   onPhotoTaken: FaceCallback;
   onError: (error: Error) => void;
-  onBackClick: () => void;
+ 
 }
 
-function FaceAutoCapture({ onPhotoTaken, onError, onBackClick }: Props) {
+function FaceAutoCapture({ onPhotoTaken, onError }: Props) {
   const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
   const handlePhotoTaken = (image: Blob, data: FaceComponentData) => {
@@ -37,19 +37,8 @@ function FaceAutoCapture({ onPhotoTaken, onError, onBackClick }: Props) {
   };
   return (
     <>
-      <h2>Face auto capture</h2>
-      <div>
-        <button
-          className={buttonStyles.primary}
-          onClick={handleContinueDetection}
-          disabled={isButtonDisabled}
-        >
-          Continue detection
-        </button>
-        <button className={buttonStyles.primary} onClick={onBackClick}>
-          Back
-        </button>
-      </div>
+      <h2>Face Detection</h2>
+      
       <div className={styles.container}>
         <FaceCamera
           imageType="png"

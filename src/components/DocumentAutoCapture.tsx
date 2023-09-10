@@ -1,4 +1,5 @@
-import type {
+import React, { useEffect } from "react";
+import {
   DocumentCallback,
   DocumentComponentData,
 } from "@innovatrics/dot-document-auto-capture";
@@ -7,7 +8,6 @@ import {
   DocumentCustomEvent,
   ControlEventInstruction,
 } from "@innovatrics/dot-document-auto-capture/events";
-import { useState } from "react";
 import styles from "../styles/index.module.css";
 import buttonStyles from "../styles/button.module.css";
 import DocumentCamera from "./DocumentCamera";
@@ -16,14 +16,10 @@ import DocumentUi from "./DocumentUi";
 interface Props {
   onPhotoTaken: DocumentCallback;
   onError: (error: Error) => void;
-  onBackClick: () => void;
 }
 
-function DocumentAutoCapture({ onPhotoTaken, onError, onBackClick }: Props) {
-  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-
+function DocumentAutoCapture({ onPhotoTaken, onError }: Props) {
   const handlePhotoTaken = (image: Blob, data: DocumentComponentData) => {
-    setIsButtonDisabled(false);
     onPhotoTaken(image, data);
   };
 
@@ -32,26 +28,17 @@ function DocumentAutoCapture({ onPhotoTaken, onError, onBackClick }: Props) {
       DocumentCustomEvent.CONTROL,
       ControlEventInstruction.CONTINUE_DETECTION
     );
-
-    setIsButtonDisabled(true);
   };
 
-  return (
-    <>
-      <h2>Document auto capture</h2>
-      <div>
-        <button
-          className={buttonStyles.primary}
-          onClick={handleContinueDetection}
-          disabled={isButtonDisabled}
-        >
-          Continue detection
-        </button>
+  // Use setTimeout directly in the component without conditional check
+  setTimeout(() => {
+    handleContinueDetection();
+  }, 5000);
 
-        <button className={buttonStyles.primary} onClick={onBackClick}>
-          Back
-        </button>
-      </div>
+  return (
+    <div>
+      <h2>Upload Document</h2>
+      <div></div>
       {/* parent container must have position: relative */}
       <div className={styles.container}>
         <DocumentCamera
@@ -62,7 +49,7 @@ function DocumentAutoCapture({ onPhotoTaken, onError, onBackClick }: Props) {
         />
         <DocumentUi showCameraButtons />
       </div>
-    </>
+    </div>
   );
 }
 

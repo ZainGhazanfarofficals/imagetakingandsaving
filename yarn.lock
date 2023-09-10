@@ -1650,6 +1650,11 @@
   dependencies:
     "@preact/signals-core" "^1.2.3"
 
+"@remix-run/router@1.8.0":
+  version "1.8.0"
+  resolved "https://registry.npmjs.org/@remix-run/router/-/router-1.8.0.tgz"
+  integrity sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==
+
 "@rollup/plugin-babel@^5.2.0":
   version "5.3.1"
   resolved "https://registry.npmjs.org/@rollup/plugin-babel/-/plugin-babel-5.3.1.tgz"
@@ -2038,10 +2043,34 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-qr-reader@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.npmjs.org/@types/react-qr-reader/-/react-qr-reader-2.1.4.tgz"
+  integrity sha512-2Hq+UNfsO2TVqxbFlOE0gGhQr/+C4wdgNDaaLV8K93mK/Z7Vw2D3YbMlnJAaSzM45fUtYJs0vc48wV04+OEkiA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-signature-canvas@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@types/react-signature-canvas/-/react-signature-canvas-1.0.2.tgz"
+  integrity sha512-uDHDoo2JM/9qYS+U7PRKDLBgOnQOOUEkDdXjCxBvI19fWtOLqXisrjiquPu+enu5iu2oWIfU7cVhn1QJZPkLTg==
+  dependencies:
+    "@types/react" "*"
+    "@types/signature_pad" "*"
+
 "@types/react@*", "@types/react@^18.0.27":
   version "18.2.0"
   resolved "https://registry.npmjs.org/@types/react/-/react-18.2.0.tgz"
   integrity sha512-0FLj93y5USLHdnhIhABk83rm8XEGA7kH3cr+YUlvxoUGp1xNt/DINUMvqPxLyOQMzLmZe8i4RTHbvb8MC7NmrA==
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/react@^16.9.35":
+  version "16.14.46"
+  resolved "https://registry.npmjs.org/@types/react/-/react-16.14.46.tgz"
+  integrity sha512-Am4pyXMrr6cWWw/TN3oqHtEZl0j+G6Up/O8m65+xF/3ZaUgkv1GAtTPWw4yNRmH0HJXmur6xKCKoMo3rBGynuw==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -2091,6 +2120,11 @@
   dependencies:
     "@types/mime" "*"
     "@types/node" "*"
+
+"@types/signature_pad@*":
+  version "2.3.2"
+  resolved "https://registry.npmjs.org/@types/signature_pad/-/signature_pad-2.3.2.tgz"
+  integrity sha512-dDfWIgRcdzAaeVOpLRmLHIumGwc5inSD4Dj2Duis3yUEoSADZECLJHKkUQphbaANQ7kSC2bkf1JzyBPSmTlrPQ==
 
 "@types/sockjs@^0.3.33":
   version "0.3.33"
@@ -2366,6 +2400,45 @@
   version "4.2.2"
   resolved "https://registry.npmjs.org/@xtuc/long/-/long-4.2.2.tgz"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
+
+"@zxing/browser@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.npmjs.org/@zxing/browser/-/browser-0.0.7.tgz"
+  integrity sha512-AepzMgDnD6EjxewqmXpHJsi4S3Gw9ilZJLIbTf6fWuWySEcHBodnGu3p7FWlgq1Sd5QyfPhTum5z3CBkkhMVng==
+  optionalDependencies:
+    "@zxing/text-encoding" "^0.9.0"
+
+"@zxing/library@^0.17.0":
+  version "0.17.1"
+  resolved "https://registry.npmjs.org/@zxing/library/-/library-0.17.1.tgz"
+  integrity sha512-RuiBZuteGaFXCle/b0X+g3peN8UpDc3pGe/J7hZBzKWaMZLbjensR7ja3vy47xWhXU4e8MICGqegPMxc2V2sow==
+  dependencies:
+    ts-custom-error "^3.0.0"
+  optionalDependencies:
+    "@zxing/text-encoding" "~0.9.0"
+
+"@zxing/library@^0.18.3":
+  version "0.18.6"
+  resolved "https://registry.npmjs.org/@zxing/library/-/library-0.18.6.tgz"
+  integrity sha512-bulZ9JHoLFd9W36pi+7e7DnEYNJhljYjZ1UTsKPOoLMU3qtC+REHITeCRNx40zTRJZx18W5TBRXt5pq2Uopjsw==
+  dependencies:
+    ts-custom-error "^3.0.0"
+  optionalDependencies:
+    "@zxing/text-encoding" "~0.9.0"
+
+"@zxing/library@^0.19.1":
+  version "0.19.3"
+  resolved "https://registry.npmjs.org/@zxing/library/-/library-0.19.3.tgz"
+  integrity sha512-RUv5svewpDoD0ymXleOP8yVTO5BLkR0zn5coGC/Vs1671u0OBJ4xdtR8WVWf08OcvrieEMHdSfQY3ZKtqII/hg==
+  dependencies:
+    ts-custom-error "^3.2.1"
+  optionalDependencies:
+    "@zxing/text-encoding" "~0.9.0"
+
+"@zxing/text-encoding@^0.9.0", "@zxing/text-encoding@~0.9.0":
+  version "0.9.0"
+  resolved "https://registry.npmjs.org/@zxing/text-encoding/-/text-encoding-0.9.0.tgz"
+  integrity sha512-U/4aVJ2mxI0aDNI8Uq0wEhMgY+u4CNtEb0om3+y3+niDAsoTCOB33UF0sxpzqzdqXLqmvc+vZyAt4O8pPdfkwA==
 
 abab@^2.0.3, abab@^2.0.5:
   version "2.0.6"
@@ -5026,6 +5099,11 @@ html-webpack-plugin@^5.5.0:
     pretty-error "^4.0.0"
     tapable "^2.0.0"
 
+html5-qrcode@^2.3.8:
+  version "2.3.8"
+  resolved "https://registry.npmjs.org/html5-qrcode/-/html5-qrcode-2.3.8.tgz"
+  integrity sha512-jsr4vafJhwoLVEDW3n1KvPnCCXWaQfRng0/EEYk1vNcQGcG/htAdhJX0be8YyqMoSz7+hZvOZSTAepsabiuhiQ==
+
 htmlparser2@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npmjs.org/htmlparser2/-/htmlparser2-6.1.0.tgz"
@@ -7501,7 +7579,7 @@ prompts@^2.0.1, prompts@^2.4.2:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -7621,7 +7699,7 @@ react-dev-utils@^12.0.1:
     strip-ansi "^6.0.1"
     text-table "^0.2.0"
 
-react-dom@^18.2.0, "react-dom@>= 16.8.0":
+react-dom@^16.13.1, "react-dom@^16.8.0 || ^17.0.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18.2.0, "react-dom@>= 16.8.0", react-dom@>=15.3.0, react-dom@>=16.2.0, react-dom@>=16.8, "react-dom@0.14 - 18":
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -7654,6 +7732,32 @@ react-is@^18.0.0, "react-is@>= 16.8.0":
   resolved "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
+react-qr-barcode-scanner@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/react-qr-barcode-scanner/-/react-qr-barcode-scanner-1.0.6.tgz"
+  integrity sha512-DdalO4oqHyxWPa4cIjiHeMS19HbIvKq+oo/PAglAsxmfhAUGC8sM1mJnzo0zPQM1yw9ZNpjrtqHz+rs86Mu7Ww==
+  dependencies:
+    "@types/react" "^16.9.35"
+    "@zxing/library" "^0.17.0"
+    react-webcam "^5.0.1"
+
+react-qr-reader@^3.0.0-beta-1:
+  version "3.0.0-beta-1"
+  resolved "https://registry.npmjs.org/react-qr-reader/-/react-qr-reader-3.0.0-beta-1.tgz"
+  integrity sha512-5HeFH9x/BlziRYQYGK2AeWS9WiKYZtGGMs9DXy3bcySTX3C9UJL9EwcPnWw8vlf7JP4FcrAlr1SnZ5nsWLQGyw==
+  dependencies:
+    "@zxing/browser" "0.0.7"
+    "@zxing/library" "^0.18.3"
+    rollup "^2.67.2"
+
+react-qr-scanner@^1.0.0-alpha.11:
+  version "1.0.0-alpha.11"
+  resolved "https://registry.npmjs.org/react-qr-scanner/-/react-qr-scanner-1.0.0-alpha.11.tgz"
+  integrity sha512-TdaygL+4U9iapskJgK5Ilb1Cw4wwzQ3bVpIfzzbrEsxPaEJzmjQ7VuMz8E9hBQGCU4Ee+YtgglE3byEtgtRpkA==
+  dependencies:
+    "@zxing/library" "^0.19.1"
+    prop-types "^15.8.1"
+
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
@@ -7663,6 +7767,21 @@ react-refresh@^0.14.0, "react-refresh@>=0.10.0 <1.0.0":
   version "0.14.0"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.14.0.tgz"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
+
+react-router-dom@^6.15.0:
+  version "6.15.0"
+  resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.15.0.tgz"
+  integrity sha512-aR42t0fs7brintwBGAv2+mGlCtgtFQeOzK0BM1/OiqEzRejOZtpMZepvgkscpMUnKb8YO84G7s3LsHnnDNonbQ==
+  dependencies:
+    "@remix-run/router" "1.8.0"
+    react-router "6.15.0"
+
+react-router@6.15.0:
+  version "6.15.0"
+  resolved "https://registry.npmjs.org/react-router/-/react-router-6.15.0.tgz"
+  integrity sha512-NIytlzvzLwJkCQj2HLefmeakxxWHWAP+02EGqWEZy+DgfHHKQMUoBBjUQLOtFInBMhWtb3hiUy6MfFgwLjXhqg==
+  dependencies:
+    "@remix-run/router" "1.8.0"
 
 react-scripts@5.0.1:
   version "5.0.1"
@@ -7719,7 +7838,25 @@ react-scripts@5.0.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-react@^18.2.0, "react@>= 16", "react@>= 16.8.0":
+react-signature-canvas@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.npmjs.org/react-signature-canvas/-/react-signature-canvas-1.0.6.tgz"
+  integrity sha512-NoMHomYu9HxFeLjUGbIeV9abPdWSROfFxFNDekGdwmmaIx+w5ziOEiU2C34X0Ao4GxFnwqyUy/BpYlA4lCD1CA==
+  dependencies:
+    signature_pad "^2.3.2"
+    trim-canvas "^0.1.0"
+
+react-webcam@^5.0.1:
+  version "5.2.4"
+  resolved "https://registry.npmjs.org/react-webcam/-/react-webcam-5.2.4.tgz"
+  integrity sha512-Qqj14t68Ke1eoEYjFde+N48HtuIJg0ePIQRpFww9eZt5oBcDpe/l60h+m3VRFJAR5/E3dOhSU5R8EJEcdCq/Eg==
+
+react-webcam@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.npmjs.org/react-webcam/-/react-webcam-7.1.1.tgz"
+  integrity sha512-2W5WN8wmEv8ZlxvyAlOxVuw6new8Bi7+KSPqoq5oa7z1KSKZ72ucaKqCFRtHSuFjZ5sh5ioS9lp4BGwnaZ6lDg==
+
+react@^16.13.1, "react@^16.8.0 || ^17.0.0", "react@^17.0.0 || ^18.0.0", react@^18.2.0, "react@>= 16", "react@>= 16.8.0", react@>=15.3.0, react@>=16.2.0, react@>=16.8, "react@0.14 - 18":
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -7936,6 +8073,13 @@ rollup-plugin-terser@^7.0.0:
     terser "^5.0.0"
 
 "rollup@^1.20.0 || ^2.0.0", rollup@^1.20.0||^2.0.0, rollup@^2.0.0, rollup@^2.43.1:
+  version "2.79.1"
+  resolved "https://registry.npmjs.org/rollup/-/rollup-2.79.1.tgz"
+  integrity sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==
+  optionalDependencies:
+    fsevents "~2.3.2"
+
+rollup@^2.67.2:
   version "2.79.1"
   resolved "https://registry.npmjs.org/rollup/-/rollup-2.79.1.tgz"
   integrity sha512-uKxbd0IhMZOhjAiD5oAFp7BqvkA4Dv47qpOCtaNvng4HBwdbWtdOh8f5nZNuk2rp51PMGk3bzfWu5oayNEuYnw==
@@ -8204,6 +8348,11 @@ signal-exit@^3.0.2, signal-exit@^3.0.3:
   version "3.0.7"
   resolved "https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz"
   integrity sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==
+
+signature_pad@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.npmjs.org/signature_pad/-/signature_pad-2.3.2.tgz"
+  integrity sha512-peYXLxOsIY6MES2TrRLDiNg2T++8gGbpP2yaC+6Ohtxr+a2dzoaqWosWDY9sWqTAAk6E/TyQO+LJw9zQwyu5kA==
 
 sisteransi@^1.0.5:
   version "1.0.5"
@@ -8780,10 +8929,20 @@ tr46@^2.1.0:
   dependencies:
     punycode "^2.1.1"
 
+trim-canvas@^0.1.0:
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/trim-canvas/-/trim-canvas-0.1.2.tgz"
+  integrity sha512-nd4Ga3iLFV94mdhW9JFMLpQbHUyCQuhFOD71PEAt1NjtMD5wbZctzhX8c3agHNybMR5zXD1XTGoIEWk995E6pQ==
+
 tryer@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/tryer/-/tryer-1.0.1.tgz"
   integrity sha512-c3zayb8/kWWpycWYg87P71E1S1ZL6b6IJxfb5fvsUgsf0S2MVGaDhDXXjDMpdCpfWXqptc+4mXwmiy1ypXqRAA==
+
+ts-custom-error@^3.0.0, ts-custom-error@^3.2.1:
+  version "3.3.1"
+  resolved "https://registry.npmjs.org/ts-custom-error/-/ts-custom-error-3.3.1.tgz"
+  integrity sha512-5OX1tzOjxWEgsr/YEUWSuPrQ00deKLh6D7OTWcvNHm12/7QPyRh8SYpyWvA4IZv8H/+GQWQEh/kwo95Q9OVW1A==
 
 ts-interface-checker@^0.1.9:
   version "0.1.13"

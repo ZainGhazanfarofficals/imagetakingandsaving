@@ -6,7 +6,7 @@ interface Props {
 
 function PhotoResult({ photoUrl = "" }: Props) {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{marginBottom:"20px"}}>
       <img alt="Web component result" src={photoUrl} />
     </div>
   );
