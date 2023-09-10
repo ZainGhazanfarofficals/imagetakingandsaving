@@ -1,38 +1,56 @@
-# Getting Started with Vite React App
+# App Enhancement with React Router and Pages
 
-This project was bootstrapped with [Vite](https://vitejs.dev/).
+In this GitHub repository, we have enhanced our application to provide a more structured and user-friendly navigation experience. We have added the `react-router-dom` library to our project, enabling us to create distinct pages for various functionalities. The following pages have been implemented:
 
-When component (face or document) is initiliazed, sam.wasm file will be fetched from http://localhost:3000/sam.wasm.
-That's why sam.wasm file need to be placed in root of public folder.
+1. **Home**: The main landing page of our application.
+2. **Document Detection**: This page allows users to perform document detection tasks.
+3. **Face Detection**: Users can utilize this page to perform face detection operations.
+4. **QR Code Scanner**: A page dedicated to scanning QR codes.
+5. **Signature**: This page provides functionality related to signatures.
 
-## Available Scripts
+## Page Components
 
-In the project directory, you can run:
+To achieve these pages, we have created modular components that are utilized within the respective pages. This approach promotes code reusability and maintainability. Here's an overview of the components used:
 
-### `yarn start`
+- **Home Component**: The main component for the Home page.
+- **DocumentDetection Component**: Responsible for the document detection page.
+- **FaceDetection Component**: Handles face detection functionalities.
+- **QRCodeScanner Component**: Manages the QR code scanning capabilities.
+- **Signature Component**: This component deals with signature-related features.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Backend Data Storage
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+All data related to documents and face images is stored on the backend of our application. To accomplish this, we have set up a backend server, and the server code can be found in the `api/server.js` file within our project structure.
 
-### `yarn build`
+## Image Storage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The images used in our application are stored in the `upload` directory, which is accessible by the backend server. This directory serves as the repository for all image files utilized in our various detection and scanning processes.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://vitejs.dev/guide/build.html) for more information.
+To run this application locally and explore the added features, follow these steps:
 
-### `yarn copy-sam`
+1. Clone this repository to your local machine:
 
-Copy `sam.wasm` file from node modules into public folder.
-
-## Learn More
-
-You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone https://github.com/ZainGhazanfarofficals/imagetakingandsaving.git
+   ```
+2. Install the required package  :
+   ```bash
+      yarn install or npm i -f
+   ```
+3. Start Client:
+   ```bash 
+       npm start
+   ```
+   
+5. Open new terminal Go to the server folder and install the npm :
+   ```bash
+      cd api && npm install
+   ```
+6. run server
+     ```bash
+       npm start
+     ```
+7. Open your web browser and visit http://localhost:5173/
+     
